@@ -1,0 +1,128 @@
+/* soft reset do css */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+    background-image: url('https://cdn.discordapp.com/attachments/705806469362221126/711058545772199936/The-Kimars.jpg');
+    background-size: 1400px 660px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 13px;}
+    /*se a tela tiver pelo menos 400px vai carregar esse estilos*/
+    @media (min-width: 474px) {
+      body {
+        font-size: 16px;
+      }
+
+    } 
+    header{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    }
+  .menu li{
+    list-style: none;}
+  .menu ul {
+    display: flex;
+    justify-content: space-around;}
+    .menu a {
+      display: block;
+      padding: 10px 20px;
+      transition: color, 1s;
+    }
+  a{
+    text-decoration:none;
+    color:yellow;
+  font-size: 25px;
+}
+  a:active,
+  a:hover{
+    text-decoration:underline;
+  color:darkorange;} 
+  .site-title{
+    text-align:center;
+    font-family: 'Permanent Marker', cursive;
+    color:darkorange;
+    font-size: 100px;
+  }
+    .Contato h2,
+    .site-subtitle {
+      line-height: 50px;
+      text-align: center;
+      color: orangered;
+      font-family: 'Bangers', cursive;
+    }
+   .Contato,
+   .Portfólio {
+     padding: 2em;
+     min-height: 100vh;
+
+   }
+   .Portfólio .grid {
+     display: grid;
+     gap: 1em;
+   }
+   @media (min-width: 565px){
+    .Portfólio .grid {
+      grid-template-columns: repeat(2, 350px);
+    }
+   }
+   @media (min-width: 880px){
+    .Portfólio .grid {
+      grid-template-columns: repeat(2, 350px);
+      justify-content: center;
+      align-content: flex-end;
+      height: 100vh;
+      
+    }
+   }
+   .Portfólio figure {
+     text-align: center;
+     color: darkblue;
+     font-family: 'Cinzel Decorative', cursive;
+     font-size: 20px; 
+   }
+   .Contatos a {
+     color: darkblue;
+     font-size: 25px;
+     font-family: 'Courgette', cursive;
+     }
+     .Contatos a:active,
+     .Contatos a:hover {
+       color: red;
+       transition: color 1s;
+     }
+  .Contatos h2 {
+    color: cyan;
+    font-family: 'Courgette', cursive;
+    font-size: 40px;   
+  }
+  .Contatos {
+    text-align: center;
+    background-color:darkslategrey;
+  }
+  .titulo {
+    transform: scale(0) translateY(50vh) translateZ(50vh);
+    animation: linear 3s animaçãotitulo forwards;
+    opacity: 0;
+  }
+  @keyframes animaçãotitulo {
+ 100% {
+  transform: scale(1) translateY(0) translateX(0vh) ;
+  opacity: 1;
+ }
+  }
+ .Portfólio {
+  background-color: turquoise;
+  font-family: 'Press Start 2P', cursive;
+  color: greenyellow;
+ }
